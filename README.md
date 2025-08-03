@@ -80,5 +80,39 @@ Style conventions such as Javadoc usage (`@param`, `@return`, inline `{@code ...
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## 📚 References & Credits
+
+Based on the OOP‑21 course project framework delivered by the University of Bologna team :contentReference[oaicite:2]{index=2}. Follows Java documentation and design patterns as advised by course guidelines :contentReference[oaicite:3]{index=3}.
+
+---
+
+## 📄 License
+
+This project is released under the **MIT License** (see LICENSE file).
+
+---
+
+## 🗣 Contributing
+
+Pull requests are welcome. Feel free to:
+- Suggest improvements in OOP design or balance.
+- Add new wave types, enemy/turret logic.
+- Improve UI or graphics rendering.
+
+---
+
+## 🏁 Summary
+
+Siegefend demonstrates essential OO design in action: multiple interacting classes (GameEngine, Enemy, Turret, Projectile, Map), modular configuration, and evolving game logic. It’s easy to extend, customize, and refine for added complexity or polish.
+
+Enjoy defending the siege!
+
+---
+
+Let me know if you’d like me to review the actual Java code or config specifics to tailor README sections about packages or class names.
+::contentReference[oaicite:4]{index=4}
+
 
