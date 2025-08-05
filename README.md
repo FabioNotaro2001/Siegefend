@@ -5,10 +5,10 @@
 ---
 
 ## 🎮 Gameplay Overview
-- Enemies spawn in timed waves and follow a fixed route.
-- Players place turrets of different types (e.g., basic, slow, splash) alongside the route.
-- Turrets automatically target enemies within range.
-- Enemy types scale in health, speed, and point value across waves.
+- Enemies spawn in timed waves and follow a fixed route
+- Players place turrets of different types (e.g., basic, slow, splash) alongside the route
+- Turrets automatically target enemies within range
+- Enemy types scale in health, speed and point value across waves
 - The player loses if too many enemies reach the end; survives to clear all waves to win.
 
 ---
@@ -16,16 +16,16 @@
 ## 🧱 Architecture & Object‑Oriented Design
 
 The code follows clean OO principles:
-- **`GameEngine` / `GameController`**: Initializes and manages game loop (ticks, rendering, updates).
-- **`WaveManager`**: Reads wave configurations, spawns enemies per timing rules.
-- **`Enemy`** (abstract) + subclasses: defines shared behavior for enemies (e.g. movement, health) and specialized stats.
-- **`Turret`** (abstract) + subclasses: different turret behaviors (range, fire rate, damage, splash, slowing effect).
-- **`Projectile`**: Logic for tracking, applying damage/effects, and collision detection.
-- **`Map` / `Path`**: Handles graphical layout and enemy path logic.
-- **`GameState`**: Tracks player life, money, score, and wave progression.
-- **Utility & config classes**: Parses JSON or text files for turret specs, wave definitions, map layout, etc.
+- **`GameEngine` / `GameController`** -> initializes and manages game loop (ticks, rendering, updates)
+- **`WaveManager`** -> reads wave configurations, spawns enemies per timing rules
+- **`Enemy`** (abstract) + subclasses -> defines shared behavior for enemies (e.g. movement, health) and specialized stats
+- **`Turret`** (abstract) + subclasses -> different turret behaviors (range, fire rate, damage, splash, slowing effect)
+- **`Projectile`** -> logic for tracking, applying damage/effects and collision detection
+- **`Map` / `Path`** -> handles graphical layout and enemy path logic
+- **`GameState`**-> tracks player life, money, score and wave progression
+- **Utility & config classes** -> parses JSON or text files for turret specs, wave definitions, map layout, etc.
 
-Style conventions such as Javadoc usage (`@param`, `@return`, inline `{@code ...}` and `{@link ...}`) follow Java standards :contentReference[oaicite:1]{index=1}.
+Style conventions such as Javadoc usage (`@param`, `@return`, inline `{@code ...}` and `{@link ...}`) follow Java standards.
 
 ---
 
@@ -85,7 +85,7 @@ Style conventions such as Javadoc usage (`@param`, `@return`, inline `{@code ...
 
 ## 📚 References & Credits
 
-Based on the OOP‑21 course project framework delivered by the University of Bologna team :contentReference[oaicite:2]{index=2}. Follows Java documentation and design patterns as advised by course guidelines :contentReference[oaicite:3]{index=3}.
+Based on the OOP‑21 course project framework delivered by the University of Bologna team. Follows Java documentation and design patterns as advised by course guidelines.
 
 ---
 
@@ -109,10 +109,3 @@ Pull requests are welcome. Feel free to:
 Siegefend demonstrates essential OO design in action: multiple interacting classes (GameEngine, Enemy, Turret, Projectile, Map), modular configuration, and evolving game logic. It’s easy to extend, customize, and refine for added complexity or polish.
 
 Enjoy defending the siege!
-
----
-
-Let me know if you’d like me to review the actual Java code or config specifics to tailor README sections about packages or class names.
-::contentReference[oaicite:4]{index=4}
-
-
